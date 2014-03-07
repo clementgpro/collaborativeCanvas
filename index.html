@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>Clemzd Paint</title>
+
+  <script src="Pencil.js"></script>
+  <script src="canvas.js"></script>
+  <link rel="stylesheet" media="screen" href="foundation.min.css">
+</head>
+
+<body>
+
+  <div id="zoneCanvas" style="height:350px;text-align:center;">
+
+  </div>
+
+  <p class="text-center">
+    <button id="btnDots" onClick="pencil.setType('dot');">Dots</button>
+    <button id="btnLines" onClick="pencil.setType('line');">Lines</button>
+    <button id="btnCurve" onClick="pencil.setType('curve');">Curve</button>
+    <button id="btnErase" onClick="pencil.setColor('white');">Erase</button>
+    <button id="btnErase" onClick="clearAll();">Clear all</button>
+    <input type="color" value="#fad345" name="textcolor" id="iptColor" onChange="pencil.setColor()">
+  </p>
+
+  <div class="panel">
+    <h1 class="title-area; panel; text-center">Clemzd Paint Online !</h1>
+  </div>
+</body>
+</html>
